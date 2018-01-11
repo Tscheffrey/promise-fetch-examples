@@ -1,0 +1,17 @@
+{
+  "message": "Congrats, you made it!",
+  "countries": [
+    {
+      "name": "Germany",
+      "capital": "Berlin"
+    },
+    {
+      "name": "France",
+      "capital": "Paris"
+    },
+    {
+      "name": "Italy",
+      "capital": "Rome"
+    }
+  ]
+}

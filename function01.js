@@ -1,5 +1,4 @@
-
-fetch('http://dummy.restapiexample.com/api/v1/employees')
+fetch('json/first.json')
   .then(function(response) {
     // erfülltes Promise-Objekt in JSON umwandeln
     return response.json()

@@ -1,13 +1,14 @@
 
 
-fetch('http://dummy.restapiexample.com/api/v1/employees').then(function(response) {
+fetch('json/first.json').then(function(response) {
   return response.json()
 
-}).then(function(employees) {
+}).then(function(json) {
   // 1. Request war erfolgreich
-  // URL für 2. Request bauen
-  var url = 'http://dummy.restapiexample.com/api/v1/employee/' + employees[0].id
+  console.log(json)
 
+  // URL für 2. Request
+  var url = 'json/second.json'
   // 2. Request wird gestartet und weitergegeben
   return fetch(url)
 
@@ -17,7 +18,7 @@ fetch('http://dummy.restapiexample.com/api/v1/employees').then(function(response
 }).then(function(json) {
   // 2. Request war auch erfolgreich
   console.log(json)
- 
+
 }).catch(function(ex){
   // eine der Requests war nicht erfolgreich
   console.log("error")
